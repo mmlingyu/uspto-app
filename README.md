@@ -45,7 +45,7 @@ npm run desktop
 | 系统 | 命令 | 说明 |
 | --- | --- | --- |
 | Linux | `npm run dist:linux` | 生成 AppImage 和 deb，输出在 `release/` |
-| Windows | `npm run dist:win` | 生成 NSIS 安装包。在 Linux 上交叉打包通常还需要 Wine |
+| Windows | `npm run dist:win` | 生成 64 位 NSIS 安装包 `release/trademark-search-win-1.0.0-setup.exe`。未做代码签名。在 Linux 上打包时关闭了需要 Wine 的 exe 资源编辑 |
 | macOS | `npm run dist:mac` | 生成 dmg。需要在 macOS 上执行，签名和公证另计 |
 
 `npm run check` 只检查查询体和每日次数的本地逻辑，不会访问 USPTO。
